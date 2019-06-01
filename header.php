@@ -4,16 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <title>PHP LOGIN</title>
 </head>
 <body>
   <header>
-  <h1>PHP LOGIN</h1>
     <nav>
       <a href="#">
         <img src="img/pro-icon-1.png" alt="paz">
       </a>
+      <h1>PHP LOGIN</h1>
       <ul>
         <li><a href="index.php">HOME</a></li>
         <li><a href="#">PORTFOLIO</a></li>
