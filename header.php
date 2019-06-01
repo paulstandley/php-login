@@ -9,6 +9,7 @@
 </head>
 <body>
   <header>
+  <h1>PHP LOGIN</h1>
     <nav>
       <a href="#">
         <img src="img/pro-icon-1.png" alt="paz">
@@ -19,5 +20,16 @@
         <li><a href="#">ABOUT ME</a></li>
         <li><a href="#">CONTACT</a></li>
       </ul>
+      <div>
+        <form action="includes/login.inc.php" method="post">
+          <input type="text" name="" placeholder="Username/E-mail...">
+          <input type="password" name="pwd" placeholder="Password">
+          <button type="submit" name="login-submit">Login</button>
+        </form>
+        <a href="signup.php">Signup</a>
+        <form action="includes/logout.inc.php" method="post">
+          <button type="submit" name="logout-submit">Logout</button>
+        </form>
+      </div>
     </nav>
   </header>
