@@ -10,13 +10,17 @@ body {
 }
 
 header > nav {
-  background-color: rgb(250, 248, 245);
+  background-color: rgb(211, 215, 241);
   display: flex;
   flex-direction: row;
 }
 
 header > nav > a {
   padding: 1rem;
+}
+
+header > nav > a > img {
+  padding: 0.4rem 0 0 0;
 }
 
 header > nav > h1 {
@@ -36,13 +40,16 @@ header > nav > ul > li {
 }
 
 header > nav > div {
-  font-size: 1.2rem;
   padding: 0.8rem 1rem 1rem 30rem;
   display: flex;
 }
 
 header > nav > div > a {
-  padding: 1.5rem 1rem 0;
+  padding: 0.35rem 0.35rem;
+  margin: 1.41rem 1rem 1.2rem;
+  background-color: blueviolet;
+  color: white;
+  border-radius: 0.6rem;
 }
 
 header > nav > div > form {
@@ -50,14 +57,40 @@ header > nav > div > form {
   padding: 0.7rem 1rem;
 }
 
+header > nav > div > form > button {
+  background-color: blueviolet;
+  color: white;
+  padding: 0.43rem 0.53rem;
+  border-radius: 0.6rem;
+}
+
 main {
   text-align: center;
   margin: 3rem;
   padding: 2rem;
-  background-color: rgb(220, 228, 245);
+  background-color: rgb(211, 215, 241);
 }
 
 main > p {
   padding: 1rem;
   font-size: 1.4rem;
+}
+
+main.signup-main {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+main.signup-main > form {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  padding: 1rem;
+}
+
+main.signup-main > form > input {
+  padding: 1rem;
+  margin: 1rem;
 }
