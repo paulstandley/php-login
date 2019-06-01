@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: rgb(219, 231, 241);
+  background-color: rgb(239, 245, 250);
   height: 100%;
   width: 100%;
 }
@@ -20,28 +20,44 @@ header > nav > a {
 }
 
 header > nav > h1 {
-  padding: 1rem;
+  padding: 2rem 1rem;
 }
 
 header > nav > ul {
   display: flex;
   flex-direction: row;
-  padding: 1rem;
+  padding: 1.4rem 1rem;
 }
 
 header > nav > ul > li {
+  font-size: 1rem;
+  list-style: none;
   padding: 1rem;
 }
 
 header > nav > div {
-  padding: 0 0 0 8rem;
+  font-size: 1.2rem;
+  padding: 0.8rem 1rem 1rem 30rem;
   display: flex;
 }
 
 header > nav > div > a {
-  padding: 1rem;
+  padding: 1.5rem 1rem 0;
 }
 
 header > nav > div > form {
+  font-size: 2.2rem;
+  padding: 0.7rem 1rem;
+}
+
+main {
+  text-align: center;
+  margin: 3rem;
+  padding: 2rem;
+  background-color: rgb(220, 228, 245);
+}
+
+main > p {
   padding: 1rem;
+  font-size: 1.4rem;
 }
