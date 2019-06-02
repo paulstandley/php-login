@@ -12,11 +12,9 @@
 
 ```mysql
 CREATE TABLE users (
-  user_id int(11) NOT null AUTO_INCREMENT PRIMARY KEY,
-  user_first varchar(256) NOT null,
-  user_last varchar(256) NOT null,
-  user_email varchar(256) NOT null,
-  user_uid varchar(256) NOT null,
-  user_pwd varchar(256) NOT null
-  );
+  idUsers int(11) AUTO_INCREMENT PRIMARY KEY NOT NULL,
+  uidUsers TINYTEXT NOT NULL,
+  mailUsers TINYTEXT NOT NULL,
+  pwdUsers LONGTEXT NOT NULL  
+);
 ```
