@@ -17,6 +17,9 @@
     }else if(!preg_match("/^[a-zA-Z0-9]*$/", $username)) {
       header("Location: ../signup.php?error=emptyfieds&mail=".$email);
       exit();
+    }else if($password !== $passwordRepeat) {
+      header("Location: ../signup.php?error=passwordcheckuid".$username."&mail=".$email);
+      exit();
     }
   }
 ?>
