@@ -24,10 +24,10 @@
       exit();
     }
     else if($password !== $passwordRepeat) {
-      header("Location: ../signup.php?error=passwordcheckuid".$username."&mail=".$email);
+      header("Location: ../signup.php?error=passwordcheck&uid".$username."&mail=".$email);
       exit();
     }else{
-      $sql = "SELECT uidUsers FROM users WHERE uidUsers=?";
+      $sql = "SELECT uidUsers FROM users WHERE uidUsers=?;";
       $stmt = mysqli_stmt_init($conn);
       if(!mysqli_stmt_prepare($stmt, $sql)) {
         header("Location: ../signup.php?error=sqlerror1");
@@ -41,12 +41,12 @@
           header("Location: ../signup.php?error=usertaken&mail=".$email);
           exit();
         }else{
-          $sql = "INSERT INTO users (uidUsers, emailUsers, pwdUsers) VALUES (?, ?, ?)";
+          $sql = "INSERT INTO users (uidUsers, mailUsers, pwdUsers) VALUES (?, ?, ?);";
           $stmt = mysqli_stmt_init($conn);
           if(!mysqli_stmt_prepare($stmt, $sql)) {
             header("Location: ../signup.php?error=sqlerror2");
-            exit();// 1:03:03 there is a problem here ?
-          }else{
+            exit();
+          }else{// use d criped hash
             $hashedPwd = password_hash($password, PASSWORD_DEFAULT);
             mysqli_stmt_bind_param($stmt, "sss", $username, $email, $hashedPwd);
             mysqli_stmt_execute($stmt);
