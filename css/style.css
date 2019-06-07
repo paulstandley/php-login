@@ -94,3 +94,11 @@ main.signup-main > form > input {
   padding: 1rem;
   margin: 1rem;
 }
+
+.signupsuccess {
+  color: green;
+}
+
+.signuperror {
+  color: red;
+}
