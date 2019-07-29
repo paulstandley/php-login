@@ -18,3 +18,5 @@ CREATE TABLE users (
   pwdUsers LONGTEXT NOT NULL  
 );
 ```
+
+need to test this on a live site
